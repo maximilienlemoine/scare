@@ -1,0 +1,31 @@
+.flex-colonne{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: #a9d8e8;
+    font-size: 2vh;
+    font-family: Calibri, sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+input {
+    width: 4vh;
+    height: 4vh;
+}
+
+td{
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    font-size: 3vh;
+}
+
+.legende{
+    font-size: 1.5vh;
+    font-style: italic;
+    padding-top: 2vh
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur</title>
+    <link rel="stylesheet" href="style.css?neww">
+</head>
+<body>
+<h1 class="center">Score SCARE (SCA en REgulation)</h1>
+
+<div class="flex-colonne">
+    <table style="width: fit-content">
+        <tr>
+            <td><label for="sex">Sexe masculin</label></td>
+            <td><input type="checkbox" name="sex" id="sex" data-data="10"></td>
+        </tr>
+        <tr>
+            <td><label for="age-43">Entre 43 - 57 ans</label></td>
+            <td><input type="checkbox" name="age-bottom" id="age-43" data-data="13"><br></td>
+        </tr>
+        <tr>
+            <td><label for="age-57">Plus de 57 ans</label></td>
+            <td><input type="checkbox" name="age-up" id="age-57" data-data="15"></td>
+        </tr>
+        <tr>
+            <td><label for="tabac">Tabac</label></td>
+            <td><input type="checkbox" name="tabac" id="tabac" data-data="8"></td>
+        </tr>
+        <tr>
+            <td><label for="d-typique">Douleur typique</label></td>
+            <td><input type="checkbox" name="d-typique" id="d-typique" data-data="6"></td>
+        </tr>
+        <tr>
+            <td><label for="d-inaugurale">Douleur inaugurale</label></td>
+            <td><input type="checkbox" name="d-inaugurale" id="d-inaugurale" data-data="5"></td>
+        </tr>
+        <tr>
+            <td><label for="sueur">Sueurs</label></td>
+            <td><input type="checkbox" name="sueur" id="sueur" data-data="7"></td>
+        </tr>
+        <tr>
+            <td><label for="regul">Conviction du régulateur</label></td>
+            <td><input type="checkbox" name="regul" id="regul" data-data="10"></td>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+<div class="center" style="font-size: 3vh;">
+    <div id="score" class="flex-colonne">Score à 0 points</div>
+    <div id="risque" class="flex-colonne"></div>
+</div>
+
+<div class="legende">
+    <p>Score issu de l'étude de Guerineau et al.</p>
+    <p>
+        Guerineau A, Rozelle C, Sevestre E, Narcisse S, Laribi S, Giovannetti O. Predicting a diagnosis
+        of acute coronary syndrome during telephone evaluation by an emergency dispatcher: the SCARE
+        predictive scale. Emerg Rev Soc Espanola Med Emerg. févr 2020;32(1):19‑25.
+    </p>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
