@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 score -= parseInt(inputYoung.getAttribute('data-data'));
             }
 
-            if (score > 0 && score < 25) {
+            if (score >= 0 && score <= 25) {
                 remarque = "faible (<5%)";
                 color = 'darkgreen';
-            } else if (score > 26 && score < 35) {
+            } else if (score >= 26 && score <= 35) {
                 remarque = "intermédiaire (15%)";
                 color = 'darkorange';
-            } else if (score > 36 && score < 61) {
+            } else if (score >= 36) {
                 remarque = "élevé (>35%)";
                 color = 'red';
             }
