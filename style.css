@@ -29,3 +29,8 @@ td{
     font-style: italic;
     padding-top: 2vh
 }
+
+.pleftright{
+    padding-right: 3vh;
+    padding-left: 3vh;
+}
