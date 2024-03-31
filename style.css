@@ -9,6 +9,10 @@ body{
     font-family: Calibri, sans-serif;
 }
 
+.h1 {
+    color: #00008BFF;
+}
+
 .center{
     text-align: center;
 }

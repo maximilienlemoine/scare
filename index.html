@@ -2,65 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculateur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Calculateur du score SCARE concernant la survenue de Syndromes Coronariens Aigus lors de la régulation médicale des douleurs thoraciques.">
+    <meta name="keywords"
+          content="SCARE, score, calcul, calculateur, Régulation, SAMU, CRRA, 15, Médecine d'Urgence, Douleur thoracique, Douleur poitrine, Douleur thorax, Précoldialgie, Risque, Angor, STEMI, NSTEMI, Syndrome Coronarien aigu, SCA, Infarctus, score de risque">
+    <meta name="author" content="Maximilien LEMOINE">
+    <meta name="theme-color" content="#00008BFF">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Calculateur SCARE</title>
     <link rel="stylesheet" href="style.css?28092023">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-<h1 class="center" style="color: darkblue;">Score SCARE (SCA en REgulation)</h1>
+<header>
+    <h1 class="center" style="color: darkblue;">Score SCARE (SCA en REgulation)</h1>
+</header>
 
-<div class="flex-colonne pleftright">
-    <table style="width: fit-content">
-        <tr>
-            <td><label for="sex">Sexe masculin</label></td>
-            <td><input type="checkbox" name="sex" id="sex" data-data="10"></td>
-        </tr>
-        <tr>
-            <td><label for="age-43">Âge entre 43 et 57 ans</label></td>
-            <td><input type="checkbox" name="age-bottom" id="age-43" data-data="13"><br></td>
-        </tr>
-        <tr>
-            <td><label for="age-57">Âge supérieur ou égal à 58 ans</label></td>
-            <td><input type="checkbox" name="age-up" id="age-57" data-data="15"></td>
-        </tr>
-        <tr>
-            <td><label for="tabac">Tabagisme (actif ou sevré)</label></td>
-            <td><input type="checkbox" name="tabac" id="tabac" data-data="8"></td>
-        </tr>
-        <tr>
-            <td><label for="d-typique">Douleur coronarienne typique</label></td>
-            <td><input type="checkbox" name="d-typique" id="d-typique" data-data="6"></td>
-        </tr>
-        <tr>
-            <td><label for="d-inaugurale">Douleur inaugurale (1er épisode de douleur de ce type)</label></td>
-            <td><input type="checkbox" name="d-inaugurale" id="d-inaugurale" data-data="5"></td>
-        </tr>
-        <tr>
-            <td><label for="sueur">Sueurs</label></td>
-            <td><input type="checkbox" name="sueur" id="sueur" data-data="7"></td>
-        </tr>
-        <tr>
-            <td><label for="regul">Conviction du médecin régulateur de l'origine coronarienne de la douleur</label></td>
-            <td><input type="checkbox" name="regul" id="regul" data-data="11"></td>
-        </tr>
-    </table>
-</div>
+<main>
+    <article class="flex-colonne pleftright">
+        <table style="width: fit-content">
+            <tr>
+                <td><label for="sex">Sexe masculin</label></td>
+                <td><input type="checkbox" name="sex" id="sex" data-data="10"></td>
+            </tr>
+            <tr>
+                <td><label for="age-43">Âge entre 43 et 57 ans</label></td>
+                <td><input type="checkbox" name="age-bottom" id="age-43" data-data="13"><br></td>
+            </tr>
+            <tr>
+                <td><label for="age-57">Âge supérieur ou égal à 58 ans</label></td>
+                <td><input type="checkbox" name="age-up" id="age-57" data-data="15"></td>
+            </tr>
+            <tr>
+                <td><label for="tabac">Tabagisme (actif ou sevré)</label></td>
+                <td><input type="checkbox" name="tabac" id="tabac" data-data="8"></td>
+            </tr>
+            <tr>
+                <td><label for="d-typique">Douleur coronarienne typique</label></td>
+                <td><input type="checkbox" name="d-typique" id="d-typique" data-data="6"></td>
+            </tr>
+            <tr>
+                <td><label for="d-inaugurale">Douleur inaugurale (1er épisode de douleur de ce type)</label></td>
+                <td><input type="checkbox" name="d-inaugurale" id="d-inaugurale" data-data="5"></td>
+            </tr>
+            <tr>
+                <td><label for="sueur">Sueurs</label></td>
+                <td><input type="checkbox" name="sueur" id="sueur" data-data="7"></td>
+            </tr>
+            <tr>
+                <td><label for="regul">Conviction du médecin régulateur de l'origine coronarienne de la douleur</label>
+                </td>
+                <td><input type="checkbox" name="regul" id="regul" data-data="11"></td>
+            </tr>
+        </table>
+    </article>
 
-<br>
+    <br>
 
-<div class="center pleftright" style="font-size: 3vh;">
-    <div id="score" class="flex-colonne">Score à 0 points</div>
-    <div id="risque" class="flex-colonne" style="color: darkgreen;">Risque faible (<5%) de SCA.</div>
-</div>
+    <section class="center pleftright" style="font-size: 3vh;">
+        <div id="score" class="flex-colonne">Score à 0 points</div>
+        <div id="risque" class="flex-colonne" style="color: darkgreen;">Risque faible (<5%) de SCA.</div>
+    </section>
+</main>
 
-<div class="legende pleftright" style="font-size: 2vh;">
+<footer class="legende pleftright" style="font-size: 2vh;">
     <p>
         Interprétation : <br>
-        Le score SCARE est un score prédictif de Syndrome Coronarien Aigu à utiliser par le médecin régulateur lors de la régulation téléphonique d’un patient majeur présentant une douleur thoracique non traumatique.
+        Le score SCARE est un score prédictif de Syndrome Coronarien Aigu à utiliser par le médecin régulateur lors de
+        la régulation téléphonique d’un patient majeur présentant une douleur thoracique non traumatique.
         <br>
         Les résultats sont à interpréter ainsi : <br>
-        -	Score de 0 à 25 : risque faible de SCA (< 5%) <br>
-        -	Score de 26 à 35 : risque intermédiaire de SCA (environ 15 %) <br>
-        -	Score de 36 à 62 : risque élevé de SCA (> 35%) <br>
+        - Score de 0 à 25 : risque faible de SCA (< 5%) <br>
+        - Score de 26 à 35 : risque intermédiaire de SCA (environ 15 %) <br>
+        - Score de 36 à 62 : risque élevé de SCA (> 35%) <br>
         Le doute doit néanmoins toujours bénéficier au patient.
     </p>
     <p>
@@ -70,7 +87,7 @@
         of acute coronary syndrome during telephone evaluation by an emergency dispatcher: the SCARE
         predictive scale. Emerg Rev Soc Espanola Med Emerg. févr 2020;32(1):19‑25.
     </p>
-</div>
+</footer>
 </body>
 <script src="script.js?1111"></script>
 <!-- by Maximilien LEMOINE https://github.com/maximilienlemoine -->

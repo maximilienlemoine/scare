@@ -1,0 +1,21 @@
+{
+  "short_name": "Calculateur Score SCARE",
+  "name": "Score SCARE : Score prédictif de syndromes coronariens aigus en régulation médicale des douleurs thoraciques",
+  "description": "Calculateur du score SCARE concernant la survenue de Syndromes Coronariens Aigus lors de la régulation médicale des douleurs thoraciques.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#a9d8e8",
+  "theme_color": "#00008BFF",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
